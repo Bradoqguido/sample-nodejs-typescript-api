@@ -1,17 +1,17 @@
 # sample-nodejs-typescript-api
 Base for an NodeJS API with typescript, lint verification based on standardJS and using git-commit-msg-linter, lint-staged, husk and jest. 
 
-## Install
+## Install Packages
 Use `npm` or `yarn` to create or run the project.
 
-## Run
-Use `npm` or `yarn` to run the scripts below:
+## Running the server
+Use `npm` or `yarn` to run the scripts below, like:
 - `yarn dev` to run the api in devlopment mode;
 - `yarn start` to run the api in production mode;
 - `yarn build` to build a production version;
 - `yarn test` to run the unit tests;
-- `yarn test:staged` to run the unit tests on staged files;
-- `yarn lint` to run the code lint.
+- `yarn lint` to run the code lint;
+- `yarn prepare` to install husky git hooks, **to be able to commit files**.
 
 ### Development Dependencies
 - Eslint, install with `yarn add -D eslint`;
