@@ -1,8 +1,9 @@
-import { createServer } from './server'
+import { createServer } from './server';
+import { loggers } from './services/logger';
 
-const port = process.env.PORT || 3000
-const server = createServer()
+const port = process.env.PORT || 3000;
+const server = createServer();
 
 server.listen(parseInt(port.toString()), '0.0.0.0', () => {
-  console.log(`api running on ${port}`)
-})
+  loggers.api.info(`api running on ${port}`);
+});
